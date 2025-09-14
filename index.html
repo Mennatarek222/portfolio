@@ -60,30 +60,14 @@
     </ul>
   </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>Data Analysis on Movies Dataset</h3>
-        <p>Analyzed 9000+ movies using Pandas, NumPy, and Matplotlib. Extracted insights about genres, ratings, popularity, and yearly trends.</p>
-      </div>
-      <div class="project">
-        <h3>Airline Passenger Satisfaction Analysis</h3>
-        <p>Analyzed 130k+ airline passenger records using Pandas, NumPy, Matplotlib, and Seaborn. Explored factors affecting satisfaction and built predictive models with Scikit-learn.</p>
-      </div>
-      <div class="project">
-        <h3>Railway Reservation System</h3>
-        <p>Designed relational database system for booking and managing tickets. Built ERD, applied normalization, and implemented SQL queries.</p>
-      </div>
-      <div class="project">
-        <h3>Medical analysis laboratory System</h3>
-        <p>Designed and implemented a Laboratory Information System (LIS) project for a medical analysis laboratory.The project included creating an Entity-Relationship Diagram (ERD) to model the database structure and optimized SQL queries to manage data operations. </p>
-      </div>
-    </div>
+    <!-- Education -->
+  <section id="education">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <p><strong>Bachelor's Degree in Computer Science & AI</strong> – Damietta University (2023 – 2027 Expected)<br>
+    Cumulative Grade: Very Good</p>
   </section>
 
-  <!-- Experiences -->
+   <!-- Experiences -->
   <section id="experiences">
     <h2><i class="fas fa-briefcase"></i> Experiences & Trainings</h2>
     <div class="exp-container">
@@ -130,18 +114,59 @@
     </div>
   </section>
 
-  <!-- Education -->
-  <section id="education">
-    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-    <p><strong>Bachelor's Degree in Computer Science & AI</strong> – Damietta University (2023 – 2027 Expected)<br>
-    Cumulative Grade: Very Good</p>
-  </section>
+
+<!-- Projects -->
+<section id="projects">
+  <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+  <div class="projects">
+
+    <div class="project">
+      <img src="mih10uhu1464fx1kr0by-1.jpg" alt="Movies Dataset Analysis">
+      <h3>Data Analysis on Movies Dataset</h3>
+      <p>Analyzed 9000+ movies using Pandas, NumPy, and Matplotlib. Extracted insights about genres, ratings, popularity, and yearly trends.</p>
+      <a href="https://github.com/Mennatarek222/movies-analysis" target="_blank" class="btn-project">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <div class="project">
+      <img src="dataset-card.jpeg" alt="Airline Passenger Satisfaction Analysis">
+      <h3>Airline Passenger Satisfaction Analysis</h3>
+      <p>Analyzed 130k+ airline passenger records using Pandas, NumPy, Matplotlib, and Seaborn.</p>
+      <a href="https://github.com/Mennatarek222/airline-satisfaction" target="_blank" class="btn-project">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <div class="project">
+      <img src="railway-ticket-reservation-services-250x250.webp" alt="Railway Reservation System">
+      <h3>Railway Reservation System</h3>
+      <p>Designed relational database system for booking and managing tickets. Built ERD, applied normalization, and implemented SQL queries.</p>
+      <a href="https://github.com/Mennatarek222/railway-system" target="_blank" class="btn-project">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <div class="project">
+      <img src="bachelor-of-medical-laboratory-science-in-tanzania.jpg" alt="Medical Analysis Laboratory System">
+      <h3>Medical Analysis Laboratory System</h3>
+      <p>Designed and implemented a Laboratory Information System (LIS) project for a medical analysis laboratory. The project included creating an Entity-Relationship Diagram (ERD) to model the database structure and optimized SQL queries to manage data operations.</p>
+      <a href="https://github.com/Mennatarek222/medical-lab-system" target="_blank" class="btn-project">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
 
   <!-- Contact -->
   <section id="contact" class="contact">
     <h2><i class="fas fa-envelope"></i> Contact</h2>
     <p><i class="fas fa-map-marker-alt"></i> Old Damietta, Egypt</p>
-    <p><i class="fas fa-phone"></i> 01095788569</p>
+    <p><i class="fas fa-phone"></i>+201095788569</p>
     <p><i class="fas fa-envelope"></i> mennaelfar78@gmail.com</p>
     <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/menna-tarek-259a6b310" target="_blank">LinkedIn Profile</a></p>
     <p><i class="fab fa-github"></i> <a href="https://github.com/Mennatarek222" target="_blank">Github</a></p>
@@ -149,15 +174,18 @@
 
   <!-- Scroll Animation -->
   <script>
-    const sections = document.querySelectorAll("section");
-    window.addEventListener("scroll", () => {
-      sections.forEach(sec => {
-        const top = sec.getBoundingClientRect().top;
-        if(top < window.innerHeight - 100){
-          sec.classList.add("show");
-        }
-      });
-    });
+const sections=document.querySelectorAll("section");
+function reveal(){
+  sections.forEach(sec=>{
+    const top=sec.getBoundingClientRect().top;
+    if(top<window.innerHeight-100){
+      sec.classList.add("show");
+    }
+  });
+}
+window.addEventListener("scroll",reveal);
+window.addEventListener("load",reveal);
+
   </script>
 </body>
 </html>
